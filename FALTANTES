@@ -1,0 +1,60 @@
+faltantes
+  **** Validaciones en el registro de usuarios
+  Que si ya esta iniciada la sesion no te mande a la pagina del login.
+  **** alerts de registro
+  *****que el ISBN este disabled -> LISTO
+  ***** corregir el numero de edicion que no jala bien
+  ***** Respuesta de registro, regresar al inicio
+  validar que no exista ya el NUMERO DE CUENTA!!!
+  Resultados de busqueda
+  Camabiar los queries de = a like
+  ***** Corregir error de inicio de sesion
+  Validaciones TODOS los formularios de registro
+  -REGISTRO alumno LISTO
+
+
+  Lista de errores
+    so far{
+      error 1, usuario y contraseña incorrectos,
+      2 no ha iniciado Sesión
+      3 se ha agregado correctamente el registro
+    }
+
+  crear clase o archivo para los errores
+  hacer boton de regresar en una clase / archivo
+  Modificar boton de regreso porque se ve muy feo alv
+  Como mostrar los resultados de bsuqueda de libros (y todos los demas por consecuente alv)
+
+ESTAS SEGURO QUE DESEAS ELIMAR EL REGISTRO: xxxxxxx ? CON JS
+Meter el boton de regresar en el navbar
+
+
+Listos:
+Agregar libro
+Modificar libro
+Agregar Alumno
+Agre
+
+
+MODULOS
+VISTA DE usuario
+Corregir datos de usuario
+PONER LOS RESULTASOD
+MODULO DE 15 LIBROS RANDOM
+
+
+
+private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Reporte Contabilidad";
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "El footer ALV";
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridView1);
+        }
